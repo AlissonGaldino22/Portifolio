@@ -1,0 +1,473 @@
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Meu CSS*/
+
+body{
+	font-family: "Mulish", serif;
+	font-size: 12px;
+    background-color: #151b23;
+    color: white;
+    /* #DC67FF */
+}
+
+.site{
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.site-85{
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+/* Seção principal JP*/
+
+.main-div{
+	display: flex;
+	flex-direction: column;
+	min-height: 100svh;
+}
+
+.main-header{
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 0;
+	gap: 15%;
+
+}
+
+.main-header div{
+	width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header img{
+	width: 60%;
+}
+
+.main-header nav{
+	width: 60%;
+	margin: auto;
+}
+
+.main-header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-header a{
+	text-align: center;
+	font-size: 1.55em;
+}
+
+.main-header a:hover{
+	text-decoration: underline;
+	color: #B900CA;
+	transition: 0.2s;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #6f007e;
+    box-shadow: 0 4px 6px black;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: padding 0.3s ease-in-out;
+}
+
+.main-section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	flex-direction: column;
+}
+
+.main-section h1{
+	font-size: 4em;
+}
+
+.main-section > p{
+	margin-top: 40px;
+	font-size: 2em;
+}
+
+.main-section > div {
+    margin-top: 10%;
+    display: flex;
+    gap: 100px;
+}
+
+.main-section img{
+	width: 30px;
+}
+
+.main-section a{
+	border-radius: 5px;
+	border: 2px solid #B900CA;
+	padding: 10px 30px;
+}
+
+.main-section a:hover{
+	transform: scale(1.2);
+	transition: 0.5s;
+}
+
+.main-section a p{
+	font-size: 1.3em;
+}
+
+.main-section a div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20%;
+}
+
+/* Seção sobre UF*/
+
+.about-section{
+	min-height: 100svh;
+	display: flex;
+	align-items: center;
+	gap: 10%;
+}
+
+.about-texts h4, h5{
+	text-align: center;
+	margin-top: 40px;
+	font-size: 1.6em;
+}
+
+.about-main-div{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.about-image{
+	width: 30%;
+}
+
+.about-image img{
+	border: 5px solid #B900CA;
+	border-radius: 50%;
+	width: 100%;
+}
+
+.about-title h2{
+	font-size: 4em;
+	text-align: center;
+}
+
+.about-content{
+	border: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	gap: 40px;
+	border-radius: 5px;
+}
+
+.about-content p{
+	font-size: 1.5em;
+	line-height: 1.7em;
+	text-align: justify;
+}
+
+.progress-container {
+	background-color: white;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.progress-bar {
+	height: 10px;
+	background-color: #B900CA;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	border-radius: 20px;
+	margin: 3px;
+	transition: width 0.5s ease-in-out;
+}
+
+.about-language {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-language h3{
+	font-size: 2em;
+	text-align: center;
+}
+
+.about-language > div:nth-child(2){
+	display: flex;
+	justify-content: space-around;
+	margin-top: 60px;
+}
+
+.about-language-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about-language img {
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+.about-language div p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	margin-top: 7px;
+}
+
+.about-language .progress-bar-container {
+	margin-top: 10px;
+}
+
+.about-python{
+	display: flex;
+	flex-direction: column;
+}
+
+.about-python > div:nth-child(1){
+	font-size: 2em;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.about-python-content{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.about-python-content div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.about-python-content img{
+	width: 50px;
+	height: 50px;
+}
+
+.about-python-content p{
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* Seção projetos AR*/
+
+.project-section{
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.project-title h3{
+	font-size: 4em;
+}
+
+.project-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 100px;
+}
+
+.project-content > div{
+	border: 1px white solid;
+	padding: 20px;
+	width: 200px;
+	border-radius: 5px;
+}
+
+.project-content > div h4{
+	font-size: 2em;
+}
+
+.project-content > div p{
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+.project-content-img{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.project-content-img img{
+	width: 30px;
+}
+
+.project-content-btn{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.project-content-btn a{
+	font-size: 1.3em;
+	padding: 10px;
+	background-color: #80008b;
+	border-radius: 10px;
+	border: black 2px solid;
+}
+
+.project-content-btn a:hover{
+	background-color: white;
+	color: black;
+	transition: 0.2s;
+}
+
+/* Seção contato N*/
+
+.contact-section{
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-section h3{
+	margin-top: 210px;
+	font-size: 4em;
+}
+
+.contact-section ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+	margin-top: 60px;
+}
+
+.contact-section li {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 300px;
+}
+
+.contact-section a {
+    display: block;
+    background-color: #2c3e50;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section a img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-section a p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+	margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+}
